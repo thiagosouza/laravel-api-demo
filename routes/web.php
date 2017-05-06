@@ -11,11 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('names', function()
+{
+    return array(
+      1 => "John",
+      2 => "Mary",
+      3 => "Steven"
+    );
 });
 
-Route::put('/order', function () {
-    // return view('welcome');
-		return view('welcome');
+Route::resource('product', 'ProductController');
+Route::resource('client', 'ClientController');
+Route::resource('order', 'OrderController');
+
+Route::get('/', function () {
+    return view('welcome');
+		// Route::post('/order', 'OrderController@save');
 });
+
+//return App\Order::save(json_encode('{"foo":"bar"}'))
