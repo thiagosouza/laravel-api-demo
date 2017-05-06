@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::put('/order', function () {
+    // return view('welcome');
+		return view('welcome');
+});
