@@ -68,9 +68,15 @@ class OrderController extends Controller
 				$order = new Order();
 				$order->clients_id = $client->id;
 				$order->save();
+
+				$insertedOrder = Order::find($order->id);
 				foreach($products_saved as $product_saved){ //saves every product from this order
-					$order->product()->attach($product_saved->id);
+					$insertedOrder->products()->attach($product_saved->id);
 				}
+
+				return response()->json(['status' => 'ok']);
+
+				//TODO validate some insertion error and may return err and msg via JSON
     }
 
     /**
