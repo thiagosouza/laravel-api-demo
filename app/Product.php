@@ -13,4 +13,8 @@ class Product extends Model
 	 */
 	protected $table = 'products';
 
+	public function orders(){
+		return $this->belongsToMany('App\Order', 'orders_has_products', 'products_id', 'orders_id');
+	}
+
 }
