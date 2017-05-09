@@ -14,11 +14,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-			return array(
-				1 => "Mobile",
-				2 => "iPad",
-				3 => "HD"
-			);
+			return response()->json(Product::all());
     }
 
     /**

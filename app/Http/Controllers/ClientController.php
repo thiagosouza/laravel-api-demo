@@ -14,12 +14,8 @@ class ClientController extends Controller
      */
     public function index()
     {
-        return array(
-		      1 => "Thiago",
-		      2 => "Ze",
-		      3 => "Alex"
-		    );
-    }
+			return response()->json(Client::all());
+		}
 
     /**
      * Show the form for creating a new resource.
