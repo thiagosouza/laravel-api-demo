@@ -1,0 +1,11 @@
+{
+	"client" : {
+		"id" : "1",
+		"name" : "Thiago"
+	},
+	"products" : [
+		{"id":"3", "name":"HD"},
+		{"id":"4", "name":"Mouse"},
+		{"id":"5", "name":"Keyboard"}
+	]
+}

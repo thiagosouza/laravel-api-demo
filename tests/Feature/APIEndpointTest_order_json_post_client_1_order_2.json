@@ -1,0 +1,9 @@
+{
+	"client" : {
+		"id" : "1",
+		"name" : "Thiago"
+	},
+	"products" : [
+		{"id":"2", "name":"iPad"}
+	]
+}
