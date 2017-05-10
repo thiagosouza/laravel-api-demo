@@ -61,3 +61,8 @@ vendor/bin/phpunit --testdox
 vendor/bin/phpunit --tap
 vendor/bin/phpunit  --testdox && vendor/bin/phpunit --tap
 ```
+
+![tests](tests-tap.png)
+![tests (testdox](tests-testdox.png)
+
+
